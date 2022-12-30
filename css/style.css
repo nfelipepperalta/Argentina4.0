@@ -1,0 +1,23 @@
+header{
+    padding: 2em;
+    background-image: url("../Images/head.png");
+    background-size: cover;
+    background-position: fixed;
+}
+div img{
+    border-radius: 80%;
+    background-color: #8dc6ff;
+}
+#name {
+    text-align: left;
+    color: white;
+    text-transform: uppercase;
+    width: 500px;
+    margin: 19px;
+}
+#aboutme {
+    text-align: justify;
+    color: white;
+    width: 500px;
+    margin: 19px;
+}
