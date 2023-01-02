@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ES">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripcion" content="curriculum-vitae simple con html, css y js">
+    <meta name="author" content="Felipe FelipePPaez">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/tema_noche.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/26becc4c6f.js" crossorigin="anonymous"></script>
+    <script src="js/tema_noche.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/curriculum-vitae.png">
     <title>Curruliculum Vitae</title>
 </head>
 <body>
@@ -21,14 +29,122 @@
                 <h1 id="name">felipe peralta</h1>
                 <section id="aboutme">
                     <p>Hola! Yo soy Felipe. Trabajo en el area de Sistemas desde el 2011, tengo conocimientos variados en IT ya que pase desde soporte mesa de ayuda a infraestructura y ahora mi nuevo reto será la programación</p>
+                    <a href="https://www.linkedin.com/in/felipe-p-a87baa140/" target="_blank">
+                      <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/nfelipepperalta" target="_blank">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://twitter.com/FelipePPaez" target="_blank">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/felipeperaltaca/" target="_blank">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
                 </section>
             </div>
           </th>
         </tr>
       </table>
    </header> 
-   <footer>
-
-   </footer>
+   <main>
+    <!--Educación superior-->
+    <section>
+      <h3>Educación</h3>
+      <article>
+        <div class="instituto">
+          <span>2009-2012</span> <strong>INCAP</strong>
+        </div>
+          <di>
+            Técnico en Sistemas
+          </div>
+        </article>
+        <article>
+          <div class="instituto">
+            <span>2010-2012</span> <strong>IFET - SENA</strong>
+          </div>
+          <div>
+            Técnico en mantenimiento y Reparación de equipos de computo
+          </div>
+        </article>
+        <article>
+          <div class="instituto">
+            <span>2018-2019</span> <strong>Educación IT</strong>
+          </div>
+          <div>
+            Seguridad Informática
+          </div>
+        </article>
+    </section>
+    <!--Sección de cursos-->
+    <section>
+      <h3>Cursos</h3>
+      <article>
+        <div>
+          <ul>
+            <li><a href="https://credentials.itcollege.com.ar/ea1d21e0-fd8b-481a-bc6d-ab1e86f11e0d#gs.luy2zt">MS-AZ 104 Azure Administrator</a></li>
+            <li><a href="https://credentials.itcollege.com.ar/807c8293-b047-4497-9ddd-c162741ea66d">MS-900 Microsoft 365 Fundamentals</a></li>
+            <li><a href="https://credentials.itcollege.com.ar/04ff834f-a94f-4789-abb5-017f74ebc612#gs.luxwnj"> AWS Cloud Practitioner</a> </li>
+            <li><a href="https://www.educacionit.com/perfil/nelson%20felipe-paez%20peralta-227480/certificado/31969">Linux Administrador</a></li>
+            <li><a href="https://www.educacionit.com/perfil/nelson%20felipe-paez%20peralta-227480">Otros Cursos</a></li>
+          </ul>
+        </div>
+      </article>
+    </section>
+    <!--Skills-->
+    <section>
+      <h3>Skills</h3>
+      <div class="skills">
+        <div class="column">
+          <h4>Altos conocimientos en:</h4>
+          <ul>
+            <li>Administración de Backups</li>
+            <li>Administración de Servidores windows y Linux</li>
+            <li>Plataformas de Monitoreo</li>
+            <li>Administración de servicios IIS</li>
+            <li>Administración de Switches</li>
+            <li>Atención a Usuario Final</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4>Conocimientos Básicos</h4>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>SQL</li>
+            <li>Power BI</li>
+            <li>Azure & AWS</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Idiomas</h4>
+          <p>ES Español - Nativo</p>
+          <p>EN Ingles - A2</p>
+          <p>PR Portugues - B1</p>
+        </div>
+      </div>
+    </section>
+    <!--Experiencia Labora-->
+    <section>
+      <h3>Experiencia</h3>
+      <article>
+        <div class="job-title">
+          <span>2017 - 2022</span> <strong>Hospital Britanico</strong><br> <strong>Posición:</strong> Administrador de Servidores
+        </div>
+        <div>
+          <ul class="job-description">
+            <li>Mantener la infraestructura actualizada</li>
+            <li>Resolución de Problemas</li>
+            <li>Implementaciones y desarrollo de nuevos ambientes productivos</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+    <button type="button" id="btn">Tema noche</button>
+  </main>
+  <footer>
+    <p>Creado por: <a>FelipePPaez</a>  / <a href="https://www.linkedin.com/in/felipe-p-a87baa140/">LinkedIn</a> / 2023 </p>
+  </footer>
 </body>
 </html>
