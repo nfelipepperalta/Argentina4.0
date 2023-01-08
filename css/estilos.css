@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 20px;
@@ -14,7 +17,12 @@ header {
   height: auto;
 }
 .contenedor{
+  /*
   display: flex;
+  flex-wrap: wrap;
+  */
+  display: grid;
+  grid-template-columns: 30% 70%;
   gap: 10px;
 }
 div img {
@@ -22,13 +30,14 @@ div img {
   background-color: #8dc6ff;
 }
 #presentation{
-  width: 30%;
+  width: 40%;
+  padding-top: 2%;
 }
 #name {
   text-align: left;
   color: white;
   text-transform: uppercase;
-  width: 60%;
+  width: 40%;
   margin: 19px;
 }
 #aboutme {
@@ -122,61 +131,19 @@ footer a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 800px) {
-  main {
-    background-color: white;
-  }
-  #presentation{
-    width: 95%;
-  }
-  #name{
-    text-align: justify;
-    color: white;
-    width: 95%;
-  }
-  #aboutme {
-    text-align: justify;
-    color: white;
-    width: 95%;
-    padding: 1% 1% 1% 1%;
-    box-sizing: border-box;
-    margin-left: auto;
-    margin-right: 30%;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-}    
-
-@media screen and (max-width: 500px) {
-  main {
-    body{
-      width: 100%;
-      height: auto;
-      margin-left: 1%;
-      margin-right: 1%;
-      margin-top: auto;
-      margin-bottom: auto;
-    }
-    main {
-      background-color: white;
-      width: 100%;
-      margin-left: 1%;
-      margin-right: 1%;
-      margin-top: auto;
-      margin-bottom: auto;
-    }
+@media screen and (max-width: 900px) {
   .contenedor{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 10px;
+    justify-items: center;
   }
   #presentation{
-    width: 100%;
+    width: 80%;
   }
-  .skills {
-    width: 100%;
-  }
-}  
-@media screen and (max-width: 400px) {
+}
+
+@media screen and (max-width: 800px) {
   body{
     width: 100%;
     height: auto;
@@ -193,6 +160,56 @@ footer a {
     margin-top: auto;
     margin-bottom: auto;
   }
+  .contenedor{
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 10px;
+    justify-items: center;
+  }
+  #presentation{
+    width: 95%;
+  }
+  #photo {
+  }
+  #name{
+    text-align: justify;
+    color: white;
+    width: 95%;
+  }
+  #aboutme {
+    text-align: justify;
+    color: white;
+    width: 95%;
+    padding: 1% 1% 1% 1%;
+    box-sizing: border-box;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}    
+
+@media screen and (max-width: 500px) {
+  #presentation{
+    width: 100%;
+    flex: 100%;
+  }
+  .skills {
+    width: 100%;
+  }
+  .skills .column {
+    flex: 100%;
+    max-width: 100%;
+    width: 90%;
+    padding: 1% 1% 1% 1%;
+    box-sizing: border-box;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}  
+@media screen and (max-width: 400px) {
   header{
     width: 100%;
     height: auto;
@@ -212,27 +229,5 @@ footer a {
     padding: 2%;
     margin-left: 0%;
     margin-right: 0%;
-  }
-  #aboutme {
-    text-align: justify;
-    color: white;
-    width: 95%;
-    padding: 1% 1% 1% 1%;
-    box-sizing: border-box;
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-  .skills .column {
-    flex: 100%;
-    max-width: 100%;
-    width: 90%;
-    padding: 1% 1% 1% 1%;
-    box-sizing: border-box;
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-top: auto;
-    margin-bottom: auto;
   }
 } 
